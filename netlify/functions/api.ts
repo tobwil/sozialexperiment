@@ -146,7 +146,7 @@ export default async (req: Request, context: Context) => {
       const text = typeof body.text === "string" ? sanitizeText(body.text, maxLen) : "";
       const authorRaw = typeof body.author === "string" ? sanitizeText(body.author, MAX_AUTHOR_LENGTH) : "";
       const author = authorRaw.length > 0 ? authorRaw : null;
-      const imageAltRaw = typeof body.author === "string" ? sanitizeText(body.imageAlt, MAX_IMAGE_ALT) : "";
+      const imageAltRaw = typeof body.imageAlt === "string" ? sanitizeText(body.imageAlt, MAX_IMAGE_ALT) : "";
       const imageAlt = imageAltRaw.length > 0 ? imageAltRaw : null;
       const image = decodeImage(body.image);
 
