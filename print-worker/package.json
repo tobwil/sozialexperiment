@@ -1,0 +1,14 @@
+{
+  "name": "sozialexperiment-print-worker",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Lokaler ESC/POS-Worker für die Pinnwand-Druckerwarteschlange",
+  "scripts": {
+    "start": "node index.js",
+    "dry-run": "DRY_RUN=1 node index.js"
+  },
+  "dependencies": {
+    "iconv-lite": "^0.6.3"
+  }
+}
